@@ -1,5 +1,6 @@
 import { Sidebar, Center, Player } from "../components/index";
 import { getSession } from "next-auth/react";
+import "tailwindcss/tailwind.css";
 
 const Home = () => {
   return (
