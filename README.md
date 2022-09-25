@@ -30,7 +30,7 @@ git clone https://github.com/juliorojas81871/spotify-clone
 ```
 npm i
 ```
-5. Edit the .env.local-example to .env.local and add the data to each one
+5. Edit the .env.local-example to .env.local and add the data to each one (type anything you want for JWT_SECRET)
 6. You need to have a premium Sptoify account running on your computer. (you won't be able to play the song if you don't have premium)
 7. Type: 
 ```

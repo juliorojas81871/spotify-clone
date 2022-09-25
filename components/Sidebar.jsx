@@ -1,11 +1,10 @@
 import {
-  HeartIcon,
   HomeIcon,
   LibraryIcon,
   PlusCircleIcon,
-  RssIcon,
   SearchIcon,
 } from "@heroicons/react/outline";
+import { HeartIcon, RssIcon } from "@heroicons/react/solid";
 import { useSession } from "next-auth/react";
 import { useState, useEffect } from "react";
 import useSpotify from "../hooks/useSpotify";
