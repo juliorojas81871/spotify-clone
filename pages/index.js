@@ -1,8 +1,7 @@
 import { Sidebar, Center, Player } from "../components/index";
-import { getSession, useSession } from "next-auth/react";
+import { getSession } from "next-auth/react";
 
 const Home = () => {
-  const { data: session, status } = useSession();
   return (
     <div className="bg-black h-screen overflow-hidden">
       <main className="overflow-hidden scrollbar-hide flex">
@@ -17,7 +16,7 @@ const Home = () => {
   );
 };
 
-// to prevent the http 403
+// to prevent the http 403 when first login in
 export async function getServerSideProps(context) {
   const session = await getSession(context);
   return {

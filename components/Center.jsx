@@ -31,7 +31,6 @@ const Center = () => {
   useEffect(() => {
     spotifyApi.getPlaylist(playlistId).then(
       function (data) {
-        // console.log("Some information about this playlist", data.body);
         setPlaylist(data.body);
       },
       function (error) {
