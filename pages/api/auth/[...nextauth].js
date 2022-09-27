@@ -46,6 +46,7 @@ export default NextAuth({
     async jwt({ token, account, user }) {
       // initial sign in
       // initial sign in will give you two properties : account variable & user variable
+      console.log(account, user);
       if (account && user) {
         return {
           ...token,
