@@ -61,6 +61,7 @@ export default NextAuth({
       // Return previous token if the access token has not expired yet
       if (Date.now() < token.accessTokenExpires) {
         console.log("Existing token is still valid");
+        console.log(token);
         return token;
       }
 
