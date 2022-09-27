@@ -1,5 +1,5 @@
-import React from "react";
 import { getProviders, signIn } from "next-auth/react";
+import Spotify from '../assets/spotify.png'
 
 function Login({ providers }) {
   return (
