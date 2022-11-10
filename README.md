@@ -1,45 +1,27 @@
-# Spotify Clone
+# Next.js + Tailwind CSS Example
 
-## Description
+This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v3.2)](https://tailwindcss.com/blog/tailwindcss-v3-2) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
 
-A responsive Spotify clone that can fetch Spotify playlists and control music playback, using the Spotify API.
-If anyone want see this code, [please click at this link](https://spotify-clone-jnkj.vercel.app/login).
+## Deploy your own
 
-## Requirements
+Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
 
-- You must have a Spotify premium account
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
 
-- You must connect to Spotify developer
+## How to use
 
-- must have regular Spotify running in the background
+Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
 
-## Technologies & Methods Used
-
-ReactJS, NextJS, TailwindCSS, SpotifyAPI, oauth JWT, access/refresh, tokens, Recoil, Debounce
-
-## Steps to get code to run:
-1. Open terminal
-2. Type (You can also download the code):
-```
-git clone https://github.com/juliorojas81871/spotify-clone
+```bash
+npx create-next-app --example with-tailwindcss with-tailwindcss-app
 ```
 
-3. Make sure that you are in the right folder, if not cd to it.
-
-4. Type: 
-```
-npm i
-```
-5. Edit the .env.local-example to .env.local and add the data to each one (type anything you want for JWT_SECRET)
-6. You need to have a premium Sptoify account running on your computer. (you won't be able to play the song if you don't have premium)
-7. Type: 
-```
-npm run dev
-```
-8. Go to browser and type at the address bar: 
-```
-http://localhost:3000/
+```bash
+yarn create next-app --example with-tailwindcss with-tailwindcss-app
 ```
 
-## Example Pic:
-![Notes Example Pic](https://github.com/juliorojas81871/spotify-clone/blob/main/pics/main.jpg)
+```bash
+pnpm create next-app --example with-tailwindcss with-tailwindcss-app
+```
+
+Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).

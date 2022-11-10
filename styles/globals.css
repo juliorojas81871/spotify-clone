@@ -2,8 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components  {
-    .button {
-        @apply h-5 w-5 cursor-pointer hover:scale-125 transition transform duration-100 ease-out;
+
+@layer components {
+    .sidebarIcon {
+      @apply h-6 text-[#808080] cursor-pointer;
     }
-}
+}  
