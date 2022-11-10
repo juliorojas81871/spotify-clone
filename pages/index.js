@@ -12,6 +12,8 @@ const Home = () => {
 
       <div className="sticky bottom-0">
         <Player />
+        work
+      
       </div>
     </div>
   );
