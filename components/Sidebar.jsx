@@ -7,6 +7,7 @@ import {
 } from "@heroicons/react/solid";
 import { FaMicrophoneAlt } from "react-icons/fa";
 import { RiCompassFill } from "react-icons/ri";
+import { signOut, useSession } from "next-auth/react";
 
 const Sidebar = () => {
   return (
@@ -17,6 +18,7 @@ const Sidebar = () => {
         height={56}
         style={{ objectFit: "cover" }}
         alt=""
+        onClick={() => signOut({ redirect: false })}
       />
       <div className="flex flex-col space-y-8">
         <HomeIcon className="sidebarIcon text-white opacity-[0.85]" />

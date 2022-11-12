@@ -1,8 +1,23 @@
 import { BsFillPauseFill, BsFillPlayFill } from "react-icons/bs";
+import { useRecoilState } from "recoil";
+import { playingTrackState, playState } from "../atoms/playerAtom";
 
-const Poster = ({ track }) => {
+const Poster = ({ track, chooseTrack }) => {
+  const [play, setPlay] = useRecoilState(playState);
+  const [playingTrack, setPlayingTrack] = useRecoilState(playingTrackState);
+
+  const handlePlay = () => {
+    chooseTrack(track);
+
+    if (track.uri === playingTrack.uri) {
+      setPlay(!play);
+    }
+  };
   return (
-    <div className="w-[260px] h-[360px] rounded-[50px] overflow-hidden relative text-white/80 cursor-pointer hover:scale-105 hover:text-white/100 transition duration-200 ease-out group mx-auto">
+    <div
+      className="w-[260px] h-[360px] rounded-[50px] overflow-hidden relative text-white/80 cursor-pointer hover:scale-105 hover:text-white/100 transition duration-200 ease-out group mx-auto"
+      onClick={handlePlay}
+    >
       <img
         src={track.albumUrl}
         alt=""
@@ -11,7 +26,11 @@ const Poster = ({ track }) => {
 
       <div className="absolute bottom-10 inset-x-0 ml-4 flex items-center space-x-3.5">
         <div className="h-10 w-10 bg-[#15883e] rounded-full flex items-center justify-center group-hover:bg-[#1db954] flex-shrink-0">
-          <BsFillPlayFill className="text-white text-xl ml-[1px]" />
+          {track.uri === playingTrack.uri && play ? (
+            <BsFillPauseFill className="text-white text-xl" />
+          ) : (
+            <BsFillPlayFill className="text-white text-xl ml-[1px]" />
+          )}
         </div>
 
         <div className="text-[15px]">

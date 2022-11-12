@@ -9,7 +9,7 @@ const Home = () => {
   const { status, data: session } = useSession({
     required: true,
     onUnauthenticated() {
-      router.push("/auth/signin");
+      router.push("/signin");
     },
   });
 
