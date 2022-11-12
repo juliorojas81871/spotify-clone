@@ -15,7 +15,8 @@ const Sidebar = () => {
         src="/assets/sportify-logo.png"
         width={56}
         height={56}
-        objectFit="contain"
+        style={{ objectFit: "cover" }}
+        alt=""
       />
       <div className="flex flex-col space-y-8">
         <HomeIcon className="sidebarIcon text-white opacity-[0.85]" />

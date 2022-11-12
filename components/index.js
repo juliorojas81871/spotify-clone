@@ -4,3 +4,4 @@ export { default as Body } from './Body';
 export { default as Right } from './Right';
 export { default as Search } from './Search';
 export { default as Loader } from './Loader';
+export { default as Poster } from './Poster';

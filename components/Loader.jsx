@@ -8,7 +8,7 @@ const Loader = () => {
         <span className="relative w-[400px] h-[250px] lg:w-[550px] lg:h-[240px]">
           <Image
             src="/assets/spotify-login.jpg"
-            layout="fill"
+            fill
             objectFit="contain"
             className="animate-pulse"
           />

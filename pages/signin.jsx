@@ -27,7 +27,7 @@ function Signin({ providers }) {
         src="/assets/spotify-login.jpg"
         height={250}
         width={600}
-        objectFit="contain"
+        style={{ objectFit: "contain" }}
         className="animate-pulse"
       />
       {Object.values(providers).map((provider) => (
