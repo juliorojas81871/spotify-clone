@@ -3,7 +3,7 @@
 ## Description
 
 A responsive Spotify clone that can fetch Spotify playlists and control music playback, using the Spotify API.
-If anyone want see this code, [please click at this link](https://spotify-clone-jnkj.vercel.app/login).
+If anyone want see this code, [please click at this link](https://spotify-clone-jnkj.vercel.app/).
 
 ## Requirements
 
@@ -21,7 +21,7 @@ ReactJS, NextJS, TailwindCSS, SpotifyAPI, oauth JWT, access/refresh, tokens, Rec
 1. Open terminal
 2. Type (You can also download the code):
 ```
-git clone https://spotify-clone-jnkj.vercel.app/
+git clone https://github.com/juliorojas81871/spotify-clone
 ```
 
 3. Make sure that you are in the right folder, if not cd to it.
