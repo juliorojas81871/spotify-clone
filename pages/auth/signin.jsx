@@ -3,12 +3,11 @@ import { useRouter } from "next/router";
 import Head from "next/head";
 import Image from "next/image";
 import { useEffect } from "react";
-import {Loader} from "../components";
+import {Loader} from "../../components";
 
 function Signin({ providers }) {
   const { data: session } = useSession();
   const router = useRouter();
-
   useEffect(() => {
     if (session) {
       router.push("/");

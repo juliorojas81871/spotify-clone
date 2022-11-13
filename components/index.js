@@ -6,3 +6,6 @@ export { default as Search } from './Search';
 export { default as Loader } from './Loader';
 export { default as Poster } from './Poster';
 export { default as Track } from './Track';
+export { default as Player } from './Player';
+export { default as RecentlyPlayed } from './RecentlyPlayed';
+export { default as Dropdown } from './Dropdown';

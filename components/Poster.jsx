@@ -8,7 +8,7 @@ const Poster = ({ track, chooseTrack }) => {
 
   const handlePlay = () => {
     chooseTrack(track);
-
+    setPlay(true) 
     if (track.uri === playingTrack.uri) {
       setPlay(!play);
     }
