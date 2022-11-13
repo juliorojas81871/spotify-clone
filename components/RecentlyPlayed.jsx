@@ -7,7 +7,7 @@ const RecentlyPlayed = ({ track, chooseTrack }) => {
 
   const handlePlay = () => {
     chooseTrack(track);
-    setPlay(true); 
+    setPlay(true);
     if (track.uri === playingTrack.uri) {
       setPlay(!play);
     }

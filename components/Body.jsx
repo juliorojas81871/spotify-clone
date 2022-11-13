@@ -7,8 +7,8 @@ const Body = ({ spotifyApi, chooseTrack }) => {
   const { accessToken } = session;
   const [search, setSearch] = useState("");
   const [searchResults, setSearchResults] = useState([]);
-  const [newReleases, setNewReleases] = useState([]); 
-    console.log(spotifyApi)
+  const [newReleases, setNewReleases] = useState([]);
+
   useEffect(() => {
     if (!accessToken) return;
     spotifyApi.setAccessToken(accessToken);
@@ -105,8 +105,8 @@ const Body = ({ spotifyApi, chooseTrack }) => {
             All Genres
           </button>
         </div>
-         {/* Tracks */}
-         <div className="w-full pr-11">
+        {/* Tracks */}
+        <div className="w-full pr-11">
           <h2 className="text-white font-bold mb-3">
             {searchResults.length === 0 ? "New Releases" : "Tracks"}
           </h2>

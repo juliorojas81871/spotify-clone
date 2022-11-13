@@ -10,7 +10,7 @@ const Right = ({ chooseTrack, spotifyApi }) => {
   const { data: session } = useSession();
   const  accessToken  = session?.accessToken;
   const [recentlyPlayed, setRecentlyPlayed] = useState([]);
-  console.log(spotifyApi)
+
   // Recently Played Tracks...
   useEffect(() => {
     if (!accessToken) return;
