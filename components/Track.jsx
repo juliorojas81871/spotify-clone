@@ -30,9 +30,6 @@ const Track = ({ track, chooseTrack }) => {
           className="hidden md:flex rounded-xl h-12 w-12 object-cover mr-3"
         />
         <div>
-          <h4 className="hidden lg:flex text-white text-sm font-semibold w-[450px]">
-            {track.title}
-          </h4>
           <h4 className="hidden md:flex text-white text-sm font-semibold w-[450px]">
             {truncate(track.title, 50)}
           </h4>
